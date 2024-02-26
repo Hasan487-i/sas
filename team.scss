@@ -1,0 +1,134 @@
+//- mobile responsive -
+@media screen and (max-width: 1200px) and (min-width: 300px) {
+    .header {
+        width: 86%;
+        margin: 0 auto;
+        padding: 30px 7% 15px;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-areas: 'head icons''navbar navbar';
+        justify-content: space-between;
+        &_head {
+            font-size: 26px;
+            font-weight: 700;
+            color: #252B42;
+            text-decoration: none;
+        }
+        &_mobile {
+            grid-area: icons;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            column-gap: 20px;
+            &-icon {
+                text-decoration: none;
+    
+                &-img {
+                    width: 24px;
+                    height: 20px;
+                }
+            }
+        }
+        &_nav {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            grid-area: navbar;
+            text-align: center;
+            padding: 40px 0;
+            margin: 0;
+    
+            &-link {
+                display: inline-block;
+                margin: 0;
+                font-size: 27px;
+                font-weight: 400;
+                color: #737373;
+            }
+        }
+        &_right {
+
+            &-login {
+                display: none;
+            }
+            &-become {
+                display: none;
+            }
+        }
+    }
+}
+@media  screen and (min-width:1201px) {
+    .header {
+        width: 70%;
+        margin: 0 auto;
+        padding: 15px 15%;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+        &_head {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &_mobile {
+            display: none;
+        }
+        &_nav {
+            padding: 0;
+            margin: 0;
+    
+            &-link {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }   
+}
+ // - header -
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  
+    &_head {
+        color: #252B42;
+        text-decoration: none;
+    }
+  
+      &_nav {
+        list-style-type: none;
+
+        &-link {
+            text-decoration: none;
+            color: #737373;
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+  
+      &-login {
+        border: none;
+        background-color: white;
+        color: #23a6f0;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+  
+      &-become {
+        margin-left: 15px;
+  
+        &-button {
+          padding: 17px 30px;
+          background-color: #23a6f0;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 14px;
+          border: none;
+        }
+      }
+    }
+  }
+  
